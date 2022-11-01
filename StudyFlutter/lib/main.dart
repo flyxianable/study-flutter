@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:studyflutter/pubDemo.dart';
+import 'package:studyflutter/wrapDemo.dart';
 
 import 'echo.dart';
 
@@ -64,9 +66,27 @@ class _MyHomePageState extends State<MyHomePage> {
     });
 
     //跳转页面
+    goWrapDemo();
+  }
+
+  void goEcho(){
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => Echo(text: "hi, Echo text", background: Colors.red)),
+    );
+  }
+
+  void goPubDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => PubRandomPage()),
+    );
+  }
+
+  void goWrapDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => WrapDemo()),
     );
   }
 
