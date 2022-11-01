@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/**
+ * wrap流布局的用法
+ */
 class WrapDemo extends StatelessWidget{
 
   @override
