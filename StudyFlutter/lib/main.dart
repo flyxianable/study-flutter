@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:studyflutter/flexDemo.dart';
 import 'package:studyflutter/paddingDemo.dart';
 import 'package:studyflutter/pubDemo.dart';
 import 'package:studyflutter/wrapDemo.dart';
@@ -95,6 +96,13 @@ class _MyHomePageState extends State<MyHomePage> {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => PaddingDemo()),
+    );
+  }
+
+  void goFlexDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => FlexDemo()),
     );
   }
 
