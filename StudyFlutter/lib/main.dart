@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:studyflutter/DecoratedDemo.dart';
+import 'package:studyflutter/SingScrollDemo.dart';
+import 'package:studyflutter/flexDemo.dart';
+import 'package:studyflutter/imageDemo.dart';
+import 'package:studyflutter/listviewDemo.dart';
+import 'package:studyflutter/paddingDemo.dart';
+import 'package:studyflutter/pubDemo.dart';
+import 'package:studyflutter/scrollToListview.dart';
+import 'package:studyflutter/transformDemo.dart';
+import 'package:studyflutter/wrapDemo.dart';
 
 import 'echo.dart';
 
@@ -64,9 +74,97 @@ class _MyHomePageState extends State<MyHomePage> {
     });
 
     //跳转页面
+    goListSpareated();
+  }
+
+  void goEcho(){
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => Echo(text: "hi, Echo text", background: Colors.red)),
+    );
+  }
+
+  void goPubDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => PubRandomPage()),
+    );
+  }
+
+  void goWrapDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => WrapDemo()),
+    );
+  }
+
+  void goPaddingDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => PaddingDemo()),
+    );
+  }
+
+  void goFlexDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => FlexDemo()),
+    );
+  }
+
+  void goMarginDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MarginDemo()),
+    );
+  }
+
+  void goDecoratedDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => DecoratedDemo()),
+    );
+  }
+
+  void goTransformDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => TransformDemo()),
+    );
+  }
+
+  void goSingleScrollDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SingleScrollDemo()),
+    );
+  }
+
+  void goListViewDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ListViewDemo()),
+    );
+  }
+
+  void goImageDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ImageDemo()),
+    );
+  }
+
+  void goScrollToListviewDemo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ScrollToListDemo()),
+    );
+  }
+
+  void goListSpareated(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ListSeparatDemo()),
     );
   }
 
